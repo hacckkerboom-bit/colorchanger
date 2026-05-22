@@ -31,9 +31,7 @@ let applybuttonfunction =()=>{
   const color =colorInput.value;
   changeColor(color);
   currentColorValue.textContent=color
-  // if(color===""){
-  //   currentColorValue.textContent='current'
-  // }
+  
 }
 
 
