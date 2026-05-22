@@ -4,12 +4,27 @@ let applyBtn = document.querySelector('.applyBtn')
 let currentColorValue = document.querySelector('.currentColorValue')
 let container = document.querySelector('.container')
 
+let colors = ["red","blue","green","yellow","orange","purple","pink","brown","black","white","gray","cyan","magenta","lime","teal","navy","gold","coral","violet","tomato"];
+
+
+let generateRandomColor = ()=>{
+  const randomNumber =colors[Math.floor(Math.random()*colors.length)];
+  return randomNumber
+}
+
 let changeColor=(color)=>{
   container.style.background=color
 }
 
 let randomfunctions=()=>{
-  console.log('clicked random')
+  let color = generateRandomColor()
+  changeColor(color)
+  currentColorValue.textContent=color
+
+
+
+
+  
 }
 
 let applybuttonfunction =()=>{
